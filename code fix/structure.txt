@@ -1,0 +1,27 @@
+Flashcard class:
+a. Members: std::string question, std::string answer.
+b. Constructors: one for creating a flashcard with a question and answer.
+c. Methods: getters and setters for the question and answer members.
+
+FlashcardSet class:
+a. Members: std::string name, std::vector<Flashcard> flashcards.
+b. Constructors: one for creating a flashcard set with a name.
+c. Methods: add/remove flashcards, shuffle flashcards, get size of flashcard set, find flashcard by question.
+
+FileHandler class:
+a. Members: none (all methods can be static).
+b. Methods:
+i. static bool saveFlashcardSet(const FlashcardSet &flashcardSet): Serialize and save a FlashcardSet object to a file.
+ii. static FlashcardSet loadFlashcardSet(const std::string &filename): Load a FlashcardSet object from a file and deserialize it.
+iii. static std::vector<std::string> listAvailableSets(): List the names of all available flashcard sets stored in the "FlashcardSets" folder.
+
+Quiz class:
+a. Members: FlashcardSet flashcardSet, int correctAnswers, int totalQuestions.
+b. Constructors: one for creating a quiz with a given flashcard set.
+c. Methods: start quiz, display question, get user answer, check answer, display results, reset quiz.
+
+Main program flow:
+a. Create a loop for the main menu, allowing the user to create a new flashcard set, load an existing set, or exit the program.
+b. When creating a new flashcard set, prompt the user to enter a name, and then allow them to add pairs of questions and answers. Save the set to a file using the FileHandler class.
+c. When loading an existing flashcard set, display a list of available sets using the FileHandler class, and prompt the user to choose one. Then, create a Quiz object with the chosen set and start the quiz.
+d. Handle any errors, such as invalid user inputs or issues with file handling, and display appropriate error messages.

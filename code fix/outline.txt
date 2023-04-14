@@ -1,0 +1,20 @@
+Program structure:
+a. Main menu - Allows the user to choose between creating a new flashcard set, loading an existing flashcard set, and exiting the program.
+b. Flashcard set creation - Allows the user to create a new flashcard set with a unique name, and add pairs of questions and answers.
+c. Flashcard set loading - Allows the user to choose from a list of available flashcard sets saved in files.
+d. Flashcard quiz - Presents questions to the user and evaluates their answers, providing feedback and tracking progress.
+
+Main components and classes:
+a. Flashcard - Represents a single flashcard, containing a question and its corresponding answer.
+b. FlashcardSet - Represents a collection of flashcards, with a name and methods to add, remove, and shuffle flashcards.
+c. FileHandler - Handles reading and writing flashcard sets to and from files.
+d. Quiz - Manages the quiz process, presenting questions, evaluating answers, and tracking progress.
+
+File storage:
+a. Save flashcard sets as text files, using a consistent format for easy parsing (e.g., JSON, CSV, or custom format).
+b. Store all flashcard set files in a dedicated folder (e.g., "FlashcardSets") within the application's directory.
+
+Additional features (optional):
+a. Editing existing flashcard sets.
+b. Exporting and importing flashcard sets to share with others.
+c. Customizable quiz options, such as the number of questions, randomization, and time limits.

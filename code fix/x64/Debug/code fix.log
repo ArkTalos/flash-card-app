@@ -1,0 +1,5 @@
+﻿  main.cpp
+  code fix.cpp
+  Generating Code...
+code fix.obj : error LNK2005: main already defined in main.obj
+C:\Users\natha\source\repos\flash-card-app\code fix\x64\Debug\code fix.exe : fatal error LNK1169: one or more multiply defined symbols found
